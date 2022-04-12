@@ -1,0 +1,128 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59 px;
+}
+#navbar
+{
+ display:flex;
+ align-items:center;
+ position:sticky;
+ top:0px;  
+}
+#navbar::before{
+    content:"";
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    z-index:-1;
+    opacity: 0.9;
+}
+#logo{
+    margin: 0px 0px;
+}
+#logo img{
+    height:59px;
+    margin:3px 6px;
+}
+#navbar ul{
+    display: inline-flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 25px;
+    padding-left: 800px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 16px;
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: justify;
+}
+#navbar ul li a:hover{
+    color: black;
+     background-color:white
+}
+#HOME
+{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#HOME::before{
+    content: "";
+    position: absolute;
+    background:url('../books-4827024_1920.jpg') no-repeat center center/cover;
+    height: 100%;
+    margin: left 0px;
+     top:0px;
+    left:0px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#HOME h1{
+    color:red;
+    text-align: right;
+    font-style: normal;
+    padding-top: 50px;
+    padding-left: 300px ;
+}
+#HOME p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    padding-left: 200px;
+}
+.btn{
+    padding:6px 20px;
+    border: 2px white solid;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: rgb(207, 120, 120);
+    color:white;
+}
+#BOOKS{
+    margin:34px;
+    display:flex;
+}
+#BOOKS.box{
+     border: 2px solid brown;
+     padding: 34px;
+     margin: 2px 55px;
+     border-radius: 28px ;
+     background: turquoise;
+     margin-bottom: 20px;
+}
+#BOOKS.box img{
+    height:160px;
+    margin: auto;
+    display: block;
+}
+#BOOKS.box p{
+    font-style: italic;
+}
+.h-primary{
+    font-style: italic;
+    font-size: 2rem;
+    padding: 2px;
+    text-align: center;
+}
+footer{
+    background: black;
+    color:white;
+    padding: 5px 20px;
+}
